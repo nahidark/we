@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - OUR University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our University</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="login">
+            <div class="card">
+                <form>
+                    <h2>Login</h2>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div> <button type="submit">Login<a href="welcomef.html"></a></button>
+                    </div>
+                    <div>
+                        <p class="register">if you are new to the university</p>
+                        <button>Register here!<a href="regf.html"></a></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; PAZION University 2021</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .login form {
+        display: flex;
+        width: 60%;
+        height: 400px;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login label {
+        margin-top: 10px;
+    }
+    
+    .login input {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    .login button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .login button:hover {
+        background-color: #555;
+    }
+    
+    .regster-here button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .regster-here button:hover {
+        background-color: #555;
+    }
+</style>
+<script>
+    var form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        if (username === 'admin' && password === 'password') {
+            alert('Login successful!');
+            window.location.href = 'dashboard.html';
+        } else {
+            alert('Invalid username or password. Please try again.');
+        }
+    });
+    var form = document.querySelector('form');
+    form.addEventListener('register', function(event) {
+        event.preventDefault();
+
+        if (button.register) {
+            alert('Login successful!');
+            window.location.href = 'registere.html';
+        } else {
+            alert('login');
+        }
+    });
+</script>

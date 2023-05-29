@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Information Upload</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>Personal Information Upload</h1>
+            <nav>
+                <ul>
+                    <li><a href="home_f.html">Home</a> </li>
+                    <li><a href="about_usf.html">About Us</a></li>
+                    <li><a href="contactus_f.html">contact us</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="form-section">
+                <h2>Upload Your Personal Information</h2>
+                <form id="info-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required><br>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required><br>
+
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+     <option value="">Select a state</option>
+     <option value="AL">Adiss abeba</option>
+     <option value="AK">Adama</option>
+     <option value="AZ">bahrdar</option>
+     
+    </select><br>
+
+                    <label for="file">Upload a file:</label>
+                    <input type="file" id="file" name="file" accept=".pdf"><br>
+
+                    <input class="btn-submit" type="submit" value="Submit">
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; PAZION University 2021</p>
+        </footer>
+    </center>
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    input {
+        color: black;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    main {
+        display: auto;
+        flex-wrap: wrap;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 50%;
+        padding: 20px;
+    }
+    
+    #form-section label,
+    #preview-section label {
+        display: inline-block;
+        width: 100px;
+    }
+    
+    #form-section input,
+    #form-section select {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    #preview-div p {
+        margin-bottom: 5px;
+    }
+    
+    .btn-submit {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .btn-submit:hover {
+        background-color: #555;
+    }
+</style>
+<script>
+    const infoForm = document.getElementById("info-form");
+    const previewDiv = document.getElementById("preview-div");
+
+
+    infoForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const city = document.getElementById("city").value;
+        const state = document.getElementById("state").value;
+        const zip = document.getElementById("zip").value;
+
+        const previewHtml = `
+  <p><strong>Name:</strong> ${name}</p>
+  <p><strong>Email:</strong> ${email}</p>
+  <p><strong>Phone:</strong> ${phone}</p>
+  <p><strong>Address:</strong> ${address}</p>
+  <p><strong>City:</strong> ${city}</p>
+  <p><strong>State:</strong> ${state}</p>
+  <p><strong>Zip Code:</strong> ${zip}</p>
+ `;
+        previewDiv.innerHTML = previewHtml;
+    });
+</script>

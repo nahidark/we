@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>My University</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="login_f.html">Admissions</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container ">
+            <div class="heading">
+                <h3>PHOTO <span>Gallery</span> </h3>
+            </div>
+            <div class="block">
+
+                <div class="dream">
+                    <img src="downloadabut.jpg">
+                    <img src="1.jpg">
+                    <img src="2.jpg">
+                    <img src="3.jpg">
+                    <img src="4.jpg">
+                </div>
+
+
+
+                <div class="dream">
+                    <img src="5.jpg">
+                    <img src="6.jpg">
+                    <img src="7.jpg">
+                    <img src="8.jpg">
+                    <img src="9.jpg">
+                </div>
+
+
+                <div class="dream">
+                    <img src="10.jpg">
+                    <img src="11.jpg">
+                    <img src="12.jpg">
+                    <img src="13.jpg">
+                    <img src="14.jpg">
+                </div>
+
+
+                <div class="dream">
+                    <img src="images.jpg">
+                    <img src="15.jpg">
+                    <img src="16.jpg">
+                    <img src="17.jpg">
+                    <img src="18.jpg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; PAZIOIN University 2021</p>
+        <div class="foter">
+            <h4>FOLLOW US ON</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .foter {
+        color: #fff;
+        padding: 0 15px;
+        font-size: 18px;
+        position: relative;
+        left: 900px;
+    }
+    
+    .foter .social-links {
+        color: #fff;
+        margin-left: 20px;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 20px 0 120px;
+    }
+    
+    .container .heading {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    
+    .container .heading h3 {
+        font-size: 30px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #222;
+    }
+    
+    .container .heading h3 span {
+        font-weight: 100;
+    }
+    
+    .container .block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container .block .dream {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        width: 32.5%;
+    }
+    
+    .container .block .dream .img {
+        width: 100%;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    @media only screen and(max-width:769px) {
+        .container .block {
+            flex-direction: column;
+        }
+        .container .block .dream {
+            width: 100%;
+        }
+    }
+</style>

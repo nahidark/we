@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>University Registration Page</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="login_f.html">Admissions</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <main>
+            <section class="registration-form">
+                <h2>Registration Form</h2>
+                <div class="card">
+                    <form>
+                        <br> <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        </br>
+                        <br> <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required></br>
+                        <br> <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required></br>
+                        <br> <label for="program">Program:</label>
+                        <select id="program" name="program" required></br>
+     <option value="">Select a program</option>
+     <option value="Computer Science">Computer Science</option>
+     <option value="Engineering">Engineering</option>
+     <option value="Business">Business</option>
+    </select>
+                        <br> <label for="semester">Semester:</label>
+                        <select id="semester" name="semester" required></br>
+     <option value="">Select a semester</option>
+     <option value="Fall">Fall</option>
+     <option value="Spring">Spring</option>
+     <option value="Summer">Summer</option>
+    </select>
+                        <br> <button type="submit">Submit</button></br>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </center>
+    <footer>
+        <p>&copy; University Registration Page 2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    option {
+        color: black;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        color: black;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    form {
+        display: auto;
+        border-color: black;
+        color: black;
+    }
+    
+    .card {
+        box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        max-height: 500px;
+        text-align: center;
+    }
+    
+    input {
+        color: black;
+    }
+    
+    label {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    select {
+        flex-basis: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: black;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+</style>

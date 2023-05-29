@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Readmission Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Readmission Application</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="login_f.html">Admissions</a></li>
+                <li><a href="#">Readmission</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="application-form">
+            <h2>Readmission Application Form</h2>
+            <form>
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+
+                <label for="reason">Reason for Readmission:</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <label for="advisor-name">Advisor Name:</label>
+                <input type="text" id="advisor-name" name="advisor-name" required>
+
+                <label for="advisor-email">Advisor Email:</label>
+                <input type="email" id="advisor-email" name="advisor-email" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Readmission Application of PAZIOIN University 2021</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 10px;
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+</style>

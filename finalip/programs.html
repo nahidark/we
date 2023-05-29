@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our University Programs</title>
+
+</head>
+<center>
+
+    <body>
+        <header>
+            <h1>Our University</h1>
+            <nav>
+                <ul>
+                    <li><a href="home_f.html">Home</a></li>
+                    <li><a href="about_usf.html">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="login_f.html">Admissions</a></li>
+                    <li><a href="contactus_f.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Welcome to Our University</h2>
+                <p>Our University is a leading educational institution that provides quality education to students from all backgrounds.</p>
+                <button>Learn More</button>
+            </section>
+            <section class="programs">
+                <h2>Our Programs</h2>
+                <ul>
+                    <li>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p>Our Bachelor of Science in Computer Science program is designed to provide students with a strong foundation in computer science theory and practice.</p>
+                    </li>
+                    <li>
+                        <h3>Bachelor of Arts in English</h3>
+                        <p>Our Bachelor of Arts in English program is designed to provide students with a strong foundation in English literature and language.</p>
+                    </li>
+                    <li>
+                        <h3>Bachelor of Business Administration</h3>
+                        <p>Our Bachelor of Business Administration program is designed to provide students with a strong foundation in business theory and practice.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; PAZIOIN University 2021</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</center>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section h2,
+    p {
+        color: #000000;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #b1abab;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .hero {
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .programs ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .programs li {
+        margin-bottom: 20px;
+    }
+    
+    .programs h3 {
+        margin-top: 0;
+    }
+    
+    .programs p {
+        margin-bottom: 0;
+    }
+</style>
+<script>
+    // Add event listener to buttons
+    var buttons = document.querySelectorAll('button');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            alert('This feature is coming soon!');
+        });
+    }
+</script>

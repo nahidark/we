@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Faculty Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Faculty Information</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="courselistf.html">Courses</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+                <li><a href="researchf.html">research</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <main>
+            <section id="faculty-list">
+                <h2>Faculty List</h2>
+                <ul id="faculty-ul">
+                    <!-- Faculty list will be dynamically generated using JavaScript -->
+                </ul>
+            </section>
+            <section id="faculty-details">
+                <h2>Faculty Details</h2>
+                <div id="faculty-details-div">
+                    <!-- Faculty details will be dynamically generated using JavaScript -->
+                </div>
+            </section>
+        </main>
+    </center>
+    <footer>
+        <p>&copy; faclty informatics Page 2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 20px;
+    }
+    
+    li h3 {
+        margin-top: 0;
+    }
+    
+    a {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    #faculty-list {
+        background-color: #e6e6e6;
+    }
+    
+    #faculty-list-div {
+        padding: 10px;
+    }
+    
+    #faculty-details {
+        background-color: #e6e6e6;
+    }
+    
+    #faculty-details-div {
+        padding: 10px;
+    }
+    
+    a:hover {
+        background-color: #555;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+
+<script>
+    const facultyList = [{
+        name: "ROBBERT MUGABE",
+        title: "DOCTORE",
+        email: "robert56muge@gmail.com",
+        phone: "555-555-5555"
+    }, {
+        name: "NELSON MANDELA",
+        title: " Professor",
+        email: "MADIBA72@gmail.com",
+        phone: "555-555-5555"
+    }, {
+        name: "MUHAMMER GADDAFI",
+        title: "DOCTORE",
+        email: "GADDAFI65@gmail.com",
+        phone: "555-555-5555"
+    }];
+
+    const facultyUl = document.getElementById("faculty-ul");
+    const facultyDetailsDiv = document.getElementById("faculty-details-div");
+
+    // Dynamically generate faculty list
+    facultyList.forEach((faculty, index) => {
+        const li = document.createElement("li");
+        li.innerText = faculty.name;
+        li.addEventListener("click", () => {
+            displayFacultyDetails(faculty, index);
+        });
+        facultyUl.appendChild(li);
+    });
+
+    // Display faculty details
+    function displayFacultyDetails(faculty, index) {
+        const detailsHtml = `
+  <h3>${faculty.name}</h3>
+  <p>Title: ${faculty.title}</p>
+  <p>Email: ${faculty.email}</p>
+  <p>Phone: ${faculty.phone}</p>
+ `;
+        facultyDetailsDiv.innerHTML = detailsHtml;
+
+        // Highlight selected faculty in the list
+        const lis = facultyUl.getElementsByTagName("li");
+        for (let i = 0; i < lis.length; i++) {
+            if (i === index) {
+                lis[i].classList.add("selected");
+            } else {
+                lis[i].classList.remove("selected");
+            }
+        }
+    }
+</script>
