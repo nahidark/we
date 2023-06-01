@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My School Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        section {
+            flex-basis: 45%;
+            margin-bottom: 18px;
+        }
+        
+        section h2 {
+            color: #000;
+        }
+        
+        p {
+            margin-top: 0;
+            color: #000;
+        }
+        
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        div.hero {
+            position: relative;
+            background-color: #c5c3c3;
+            background-position: right;
+            color: #050505;
+            text-align: right;
+            padding: 20px;
+            left: 400px;
+            width: 65%;
+        }
+        
+        div.about {
+            background-color: #727272;
+            background-position: left;
+            justify-content: left;
+            padding: 20px;
+            right: 50px;
+            width: 65%;
+        }
+        
+        div .academics {
+            position: relative;
+            background-color: #c5c3c3;
+            background-position: right;
+            justify-content: right;
+            text-align: right;
+            padding: 20px;
+            left: 400px;
+            width: 65%;
+        }
+        
+        div.admissions {
+            background-color: #727272;
+            background-position: left;
+            justify-content: left;
+            padding: 20px;
+            right: 50px;
+            width: 65%;
+        }
+        
+        .parent {
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 8px;
+            grid-row-gap: 8px;
+            box-sizing: border-box;
+        }
+        
+        @media screen and(min-width:300px) {
+            .col-1 {
+                width: 8.33%;
+            }
+            .col- {
+                width: 8.33%;
+            }
+            .col-3 {
+                width: 16.66%;
+            }
+            .col-1 {
+                width: 25%;
+            }
+            .col-5 {
+                width: 33.33%;
+            }
+            .col-6 {
+                width: 41.66%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PAZION UNIVERSITY</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="login_f.html">Login</a></li>
+                <li><a href="galleryf.html">Gallary</a></li>
+                <li><a href="programs.html">Programs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="parent">
+            <div class="hero">
+                <h2>Welcome to PAZION UNIVERSITY</h2>
+                <p>Our university is a leading educational institution that provides quality education to students from all backgrounds.</p>
+                <a href="about_usf.html"><button>Learn More</button></a>
+            </div>
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Our univerity was founded in 1990 with the aim of providing quality education to students. We have a team of highly qualified teachers who are dedicated to the success of our students.</p>
+                <a href="readmore.html"> <button>Read More</button></a>
+
+            </div>
+            <div class=" academics ">
+
+                <h2>Academics</h2>
+                <p>In Our University, we offer a wide range of academic programs that cater to the needs of our students. Our programs are designed to provide a well-rounded education that prepares students for success in their future careers.</p>
+                <a href="programs.html "><button>View Programs</button></a>
+            </div>
+
+            <div class="admissions ">
+                <h2>Admissions</h2>
+                <p>Admissions to our university is open to all students who meet our admission requirements. We offer a range of scholarships and financial aid options to help students achieve their academic goals.</p>
+                <a href="login_f.html "><button>Apply Now</button></a>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; PAZIOIN Uiveresity 2021</p>
+    </footer>
+
+</body>
+
+</html>

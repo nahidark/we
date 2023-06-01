@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - OUR University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        section {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+        
+        section h2 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .login form {
+            display: flex;
+            width: 60%;
+            height: 300px;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .login label {
+            margin-top: 10px;
+        }
+        
+        .login input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our University</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f.html">Home</a></li>
+                <li><a href="about_usf.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="contactus_f.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="login">
+            <div class="card">
+                <form>
+                    <h2>Login</h2>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div> <button type="submit">Login<a href="welcomef.html"></a></button>
+                    </div>
+                </form>
+                <div>
+                    <p class="register">DO YOU WANT TO REGISTER?</p>
+                    <a href="regf.html"><button>Register here!</button></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; PAZION University 2021</p>
+    </footer>
+
+</body>
+
+</html>

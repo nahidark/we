@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forgot Password - My University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        section {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+        
+        section h2 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .forgot-password form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .forgot-password label {
+            margin-top: 10px;
+        }
+        
+        .forgot-password input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .forgot-password button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .forgot-password button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our University</h1>
+        <nav>
+            <ul>
+                <li><a href="home_f">Home</a></li>
+                <li><a href="login_f">Admissions</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="forgot-password">
+            <h2>Forgot Password</h2>
+            <p>Please enter your email address below and we'll send you instructions on how to reset your password.</p>
+            <form>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; PAZIOIN University 2021</p>
+    </footer>
+    <script>
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+
+            alert('Instructions to reset your password have been sent to ' + email + '.');
+        });
+    </script>
+</body>
+
+</html>
